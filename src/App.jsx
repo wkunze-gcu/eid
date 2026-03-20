@@ -19,42 +19,6 @@ function HomePage() {
               Shareable Eid card with template selection and fireworks.
             </span>
           </Link>
-
-          <a
-            className="home-card"
-            href="https://creationwithali.xyz/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="home-card-title">Portfolio</span>
-            <span className="home-card-copy">
-              Visit our portfolio website and explore recent work.
-            </span>
-          </a>
-
-          <a
-            className="home-card"
-            href="https://dicodingschool.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="home-card-title">Edu Website</span>
-            <span className="home-card-copy">
-              Open our education website for courses and learning resources.
-            </span>
-          </a>
-
-          <a
-            className="home-card"
-            href="https://wa.me/923064944326"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="home-card-title">WhatsApp</span>
-            <span className="home-card-copy">
-              Chat with us directly on WhatsApp for quick support.
-            </span>
-          </a>
         </div>
       </div>
     </main>
@@ -77,22 +41,6 @@ export default function App() {
           rel="noreferrer"
         >
           WhatsApp
-        </a>
-        <a
-          className="global-link-btn portfolio-btn"
-          href="https://creationwithali.xyz/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Portfolio
-        </a>
-        <a
-          className="global-link-btn edu-btn"
-          href="https://dicodingschool.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Edu Site
         </a>
       </div>
     </>

@@ -47,8 +47,20 @@ function useSearchState() {
   return new URLSearchParams(location.search);
 }
 
-function getDefaultMessage(name) {
-  return `${name}، اللہ آپ کی عید کو خوشیوں، رحمتوں، محبتوں اور دل کے سکون سے بھر دے۔`;
+function getDefaultMessage(receiverName) {
+  const safeReceiver = receiverName || "آپ";
+
+  return `محترم "${safeReceiver}" صاحب
+
+السلام علیکم ورحمۃ اللہ وبرکاتہ
+
+عید الفطر مبارک ہو! یہ مبارک دن آپ کی زندگی میں ڈھیر ساری خوشیاں، سکون اور برکت لے کر آئے۔
+
+رمضان کے روزوں اور عبادتوں کے بعد یہ عید کا دن اللہ تعالیٰ کی بہت بڑی نعمت ہے۔ میری دعا ہے کہ اللہ تعالیٰ آپ کی تمام نیک خواہشیں پوری فرمائے، آپ کو صحت و تندرستی عطا فرمائے، اور آپ کے گھر کو ہمیشہ خوشیوں سے آباد رکھے۔
+
+اللہ آپ کو دنیا و آخرت دونوں میں کامیابی عطا فرمائے۔
+
+عید مبارک! 🌙✨`;
 }
 
 export default function CardGeneratorPage() {
