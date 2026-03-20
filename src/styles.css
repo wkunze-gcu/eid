@@ -675,8 +675,8 @@ select {
 }
 
 .night-frame {
-  padding: 32px 12px 58px;
-  min-height: min(44vh, 430px);
+  padding: 26px 10px 44px;
+  min-height: min(40vh, 380px);
 }
 
 .arch-knot {
@@ -763,9 +763,9 @@ select {
 
 .night-moon {
   position: relative;
-  width: 88px;
-  height: 88px;
-  margin: 0 auto 10px;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 8px;
   border-radius: 50%;
   background: linear-gradient(180deg, #ffe989, #ffcb31 60%, #ef9716);
   box-shadow: 0 0 30px rgba(255, 207, 82, 0.45);
@@ -780,9 +780,9 @@ select {
 }
 
 .night-lantern {
-  width: 52px;
-  height: 72px;
-  margin: 0 auto 10px;
+  width: 44px;
+  height: 60px;
+  margin: 0 auto 8px;
   position: relative;
   background: linear-gradient(180deg, #ff8dcb, #f26db1);
   border-radius: 16px 16px 26px 26px;
@@ -812,9 +812,9 @@ select {
 }
 
 .night-flame {
-  width: 9px;
-  height: 14px;
-  margin: -58px auto 34px;
+  width: 7px;
+  height: 12px;
+  margin: -46px auto 24px;
   border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
   background: linear-gradient(180deg, #fffef3, #ffd54b 68%, #f49320);
   position: relative;
@@ -932,9 +932,12 @@ select {
 }
 
 @media (max-width: 720px) {
-  .template-grid,
   .home-grid {
     grid-template-columns: 1fr;
+  }
+
+  .template-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .home-shell {
@@ -957,7 +960,7 @@ select {
   }
 
   .card-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .eid-card {
@@ -977,12 +980,12 @@ select {
   }
 
   .night-frame {
-    padding: 28px 10px 50px;
+    padding: 22px 8px 38px;
   }
 
   .night-moon {
-    width: 78px;
-    height: 78px;
+    width: 62px;
+    height: 62px;
   }
 }
 
@@ -1038,7 +1041,7 @@ select {
   }
 
   .night-frame {
-    padding: 22px 6px 36px;
+    padding: 18px 6px 30px;
   }
 
   .arch-knot {
@@ -1096,15 +1099,15 @@ select {
   }
 
   .night-moon {
-    width: 62px;
-    height: 62px;
-    margin-bottom: 10px;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 8px;
   }
 
   .night-lantern {
-    width: 46px;
-    height: 64px;
-    margin-bottom: 10px;
+    width: 38px;
+    height: 52px;
+    margin-bottom: 8px;
   }
 
   .night-lantern::before {
@@ -1115,9 +1118,9 @@ select {
   }
 
   .night-flame {
-    width: 8px;
-    height: 13px;
-    margin: -50px auto 30px;
+    width: 6px;
+    height: 10px;
+    margin: -40px auto 20px;
   }
 
   .subtitle-main {
